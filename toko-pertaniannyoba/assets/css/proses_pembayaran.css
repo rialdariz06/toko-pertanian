@@ -1,0 +1,108 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #333;
+}
+
+/* Style the confirmation section */
+.confirmation-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-section p {
+  margin: 10px 0;
+}
+
+.confirmation-section .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirmation-section .details p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.confirmation-section .details p strong {
+  color: #4caf50;
+}
+
+/* Total payment */
+.total-payment {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Add some padding and border to the table, in case there is a transaction table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

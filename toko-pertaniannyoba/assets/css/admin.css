@@ -1,0 +1,428 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f1f5f2; /* Hijau muda pastel */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Hindari scroll horizontal */
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #1b4332; /* Hijau hutan */
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px; /* Tambahkan padding */
+  max-width: 1400px; /* Perbesar lebar container */
+  background-color: #ffffff;
+  border-radius: 12px; /* Perbesar radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Tambahkan shadow */
+  border: 1px solid #e5e5e5;
+  overflow: hidden; /* Hindari elemen keluar dari container */
+  box-sizing: border-box; /* Hitung padding dalam width */
+}
+
+/* Section Styles */
+section {
+  margin: 20px auto;
+  padding: 25px; /* Tambahkan padding */
+  max-width: 100%; /* Gunakan 100% lebar dalam container */
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px; /* Perbesar radius */
+  border: 1px solid #e5e5e5;
+  overflow: auto; /* Scroll jika konten terlalu besar */
+  box-sizing: border-box; /* Hitung padding dalam width */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Tambahkan jarak antar elemen */
+}
+
+form label {
+  font-weight: bold;
+  color: #1b4332;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 16px; /* Tambahkan padding */
+  font-size: 18px; /* Perbesar font */
+  border: 1px solid #dcdcdc;
+  border-radius: 8px; /* Perbesar radius */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #95d5b2;
+  box-shadow: 0 0 6px rgba(149, 213, 178, 0.5);
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  background-color: #1b4332; /* Hijau tua */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #40916c; /* Hijau terang */
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px; /* Tambahkan jarak atas */
+  overflow-x: auto; /* Scroll horizontal jika tabel terlalu besar */
+  display: block; /* Agar scroll hanya pada tabel */
+  word-wrap: break-word; /* Bungkus teks panjang agar tidak keluar */
+}
+
+table thead {
+  background-color: #1b4332;
+  color: #fff;
+}
+
+table thead th {
+  padding: 16px; /* Tambahkan padding */
+  text-align: left;
+  border-bottom: 3px solid #40916c;
+  word-wrap: break-word; /* Bungkus teks panjang dalam kolom */
+  white-space: nowrap; /* Tambahkan ini agar teks tanggal tidak meluas */
+}
+
+table tbody tr {
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+  background-color: #e8f5e9; /* Hijau sangat muda */
+}
+
+table tbody td {
+  padding: 16px; /* Tambahkan padding */
+  color: #555;
+  word-wrap: break-word; /* Bungkus teks */
+  white-space: nowrap; /* Mencegah teks keluar */
+}
+
+/* Solusi Spesifik untuk Kolom Tanggal */
+table thead th:nth-child(8), /* Kolom Tanggal */
+table tbody td:nth-child(8) {
+  white-space: nowrap; /* Teks tetap dalam satu baris */
+  overflow: hidden; /* Sembunyikan overflow jika terlalu panjang */
+  text-overflow: ellipsis; /* Tambahkan "..." jika teks terlalu panjang */
+}
+
+/* Scroll Horizontal */
+table {
+  overflow-x: auto; /* Scroll horizontal jika tabel terlalu besar */
+}
+
+table tbody a {
+  color: #1b4332;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+table tbody a:hover {
+  text-decoration: underline;
+}
+
+button {
+  border: none;
+  padding: 12px 20px; /* Tambahkan padding */
+  color: #fff;
+  background-color: #52b788; /* Hijau sedang */
+  border-radius: 8px; /* Perbesar radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #74c69d; /* Hijau lebih terang */
+  transform: scale(1.05);
+}
+
+/* Gaya untuk tombol logout */
+.logout-btn {
+  background-color: #d9534f; /* Merah terang */
+  color: white;
+  padding: 14px 28px; /* Tambahkan padding */
+  text-decoration: none;
+  border-radius: 8px; /* Perbesar radius */
+  margin-left: 10px;
+  font-size: 20px; /* Perbesar font */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 15px;
+    margin: 10px 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Style umum untuk semua tabel di mobile */
+  table {
+    width: 100%;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  table tbody {
+    width: 100%;
+    display: block;
+  }
+
+  table tbody tr {
+    display: block;
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  table tbody td {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  table tbody td:before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: #1b4332;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  /* Hapus semua padding-left yang mungkin ada sebelumnya */
+  table tbody td,
+  table tbody td[data-label="Harga"],
+  table tbody td[data-label="Stok"],
+  table tbody td[data-label="Nama"],
+  table tbody td[data-label="Deskripsi"] {
+    padding-left: 0 !important;
+  }
+
+  /* Khusus untuk tombol aksi */
+  table tbody td[data-label="Aksi"] {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    border-bottom: none;
+  }
+
+  /* Styling untuk harga */
+  table tbody td[data-label="Harga"],
+  table tbody td[data-label="Total Pembayaran"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b4332;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  table tbody td:before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: #1b4332;
+    margin-bottom: 5px;
+  }
+
+  /* Styling khusus untuk kolom aksi pada tabel produk */
+  table tbody td[data-label="Aksi"] {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  table tbody td[data-label="Aksi"] button,
+  table tbody td[data-label="Aksi"] a {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  table tbody td {
+    font-size: 13px;
+    padding: 6px;
+    padding-left: 45%;
+  }
+
+  .transaction-table tbody td {
+    font-size: 14px;
+    padding: 14px 10px;
+  }
+
+  .transaction-table tbody td:before {
+    font-size: 13px;
+  }
+
+  .transaction-table tbody td[data-label="Total Pembayaran"] {
+    font-size: 15px;
+  }
+
+  /* Penyesuaian tambahan untuk layar sangat kecil */
+  .container {
+    padding: 5px;
+  }
+
+  section {
+    padding: 12px 8px;
+  }
+
+  .transaction-table tbody tr {
+    padding: 15px 10px;
+  }
+
+  .transaction-table tbody td {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+
+  .transaction-table tbody td:before {
+    font-size: 12px;
+  }
+
+  /* Memperkecil padding untuk menghemat ruang */
+  table tbody td[data-label="Aksi"] button,
+  table tbody td[data-label="Aksi"] a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+  /* Tabel produk */
+  table:not(.transaction-table) tbody td {
+    font-size: 14px;
+  }
+
+  /* Tabel transaksi */
+  .transaction-table tbody tr {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .transaction-table tbody td {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .transaction-table tbody td:before {
+    font-size: 13px;
+  }
+}
+
+/* Perbaikan khusus untuk tabel transaksi */
+.transaction-table {
+  border-spacing: 0 8px; /* Tambah spacing antar baris */
+  margin: 20px 0;
+}

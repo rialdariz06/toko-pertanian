@@ -1,0 +1,172 @@
+/* Styling untuk halaman Beranda Produk */
+
+/* Styling umum untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5fff5; /* Warna hijau sangat muda */
+}
+
+/* Styling untuk banner di bagian atas */
+#home-banner {
+  background-color: #2e8b57; /* Warna hijau tua */
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 10px;
+}
+
+#home-banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+#home-banner p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Styling untuk bagian Produk Unggulan */
+#featured-products {
+  padding: 40px 20px;
+  background-color: #dfffe0; /* Warna hijau pastel */
+}
+
+#featured-products h2 {
+  text-align: center;
+  color: #2e8b57;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #ffffff;
+  border: 2px solid #2e8b57;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item h3 {
+  font-size: 22px;
+  color: #2e8b57;
+  margin: 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555555;
+}
+
+.btn-main {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-main:hover {
+  background-color: #1c5e3b; /* Warna hijau lebih gelap */
+}
+
+/* Styling untuk bagian CTA */
+#cta {
+  background-color: #2e8b57;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#cta h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#cta p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  #home-banner h1 {
+    font-size: 28px;
+  }
+
+  #home-banner p {
+    font-size: 16px;
+  }
+
+  #featured-products h2 {
+    font-size: 24px;
+  }
+
+  .product-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .btn-main {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #cta h2 {
+    font-size: 24px;
+  }
+
+  #cta p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home-banner h1 {
+    font-size: 24px;
+  }
+
+  #home-banner p {
+    font-size: 14px;
+  }
+
+  #featured-products h2 {
+    font-size: 20px;
+  }
+
+  .product-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn-main {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #cta h2 {
+    font-size: 20px;
+  }
+
+  #cta p {
+    font-size: 14px;
+  }
+}

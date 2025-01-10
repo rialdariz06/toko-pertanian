@@ -1,0 +1,263 @@
+/* ================================
+   Styling untuk Body dan Halaman Umum
+   ================================ */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+     Banner Utama
+     ================================ */
+#home-banner {
+  background: url("http://localhost/toko-pertanian/assets/images/padi.jpg")
+    no-repeat center center/cover;
+  padding: 150px 20px;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+#home-banner .banner-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#home-banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home-banner p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home-banner .btn-main {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#home-banner .btn-main:hover {
+  background-color: #218838;
+}
+
+/* ================================
+     Deskripsi Toko
+     ================================ */
+#about-description {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#about-description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #28a745;
+}
+
+#about-description p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* ================================
+     Produk Unggulan
+     ================================ */
+#featured-products {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#featured-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2e8b57;
+  text-transform: uppercase;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+}
+
+.product-item img {
+  width: 70%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.product-item .btn-main {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-item .btn-main:hover {
+  background-color: #218838;
+}
+
+/* ================================
+     Call to Action Section
+     ================================ */
+#cta {
+  background-color: #2e8b57;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#cta .btn-main {
+  background-color: #ffffff;
+  color: #28a745;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#cta .btn-main:hover {
+  background-color: #218838;
+  color: white;
+}
+
+/* ================================
+     Footer
+     ================================ */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li {
+  margin: 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ================================
+     Responsivitas untuk perangkat mobile
+     ================================ */
+@media (max-width: 768px) {
+  #home-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #home-banner p {
+    font-size: 1.2rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #cta h2 {
+    font-size: 2rem;
+  }
+
+  #cta .btn-main {
+    font-size: 16px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
